@@ -1,0 +1,38 @@
+/*******************************************************************
+font
+********************************************************************/
+
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-DemiLight.woff2) format('woff2'), url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-DemiLight.woff) format('woff'),
+		url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-DemiLight.otf) format('opentype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Medium.woff2) format('woff2'), url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Medium.woff) format('woff'),
+		url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Medium.otf) format('opentype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Bold.woff2) format('woff2'), url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Bold.woff) format('woff'),
+		url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/NotoSansCJKkr-Bold.otf) format('opentype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Regular.woff2) format('woff2'), url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Regular.woff) format('woff'),
+		url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Regular.eot) format('embedded-opentype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Bold.woff2) format('woff2'), url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Bold.woff) format('woff'),
+		url(https://tistory2.daumcdn.net/tistory/2982972/skin/images/Roboto-Bold.eot) format('embedded-opentype');
+	font-weight: 600;
+}
