@@ -7,6 +7,9 @@
             ],
             "scss/*": [
                 "./src/Scss/*"
+            ],
+            "comp/*": [
+                "./src/Components/*"
             ]
         }
     }
