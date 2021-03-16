@@ -1,17 +1,29 @@
 @import 'scss/color';
 
 .button {
-    &.small {
+    // Size
+    &.size1 {
         padding: 0.5rem 1.5rem;
     }
-    &.medium {
+    &.size2 {
         padding: 1rem 2rem;
     }
+    &.size3 {
+        padding: 1.5rem 3rem;
+    }
+
+    // Color
     &.primary {
         background: $pc;
         border: none;
         color: #fff;
     }
+
+    // Outline
+    &.outline {
+        border-width: 1px;
+    }
+
     & + .button {
         margin-left: 1rem;
     }
