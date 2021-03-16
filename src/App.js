@@ -9,6 +9,7 @@ class App extends Component {
 				<Button name="test" lnk="http://naver.com" stl="primary size1" />
 				<Button name="test" lnk="http://naver.com" stl="primary size2" />
 				<Button name="test" lnk="http://naver.com" stl="primary size3" />
+				<Button name="test" lnk="http://naver.com" stl="outline size2" />
 				<Header />
 				<Footer />
 			</div>
