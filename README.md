@@ -9,11 +9,14 @@
 [프로토타입 보기](https://xd.adobe.com/view/396a5d24-354e-468e-45e6-cb3d07819689-4f5b/screen/6d629aa4-a2c2-4650-868a-3c91d0f62c51)
 
 
+![2021-03-17 12 03 03](https://user-images.githubusercontent.com/16126002/111408552-cb9d9880-8718-11eb-90b1-2c70d7958b8b.png)
+
+
+
 디자인 업그레이드 과정
 
 ![linking_thumb1](https://user-images.githubusercontent.com/16126002/111254431-6bdfb880-8658-11eb-9de3-f46c5437fa4b.jpg)
 
-![linking_thumb2](https://user-images.githubusercontent.com/16126002/111254434-6d10e580-8658-11eb-9a64-41387bbf011e.jpg)
 
 
 

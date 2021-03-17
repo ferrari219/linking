@@ -23,11 +23,15 @@
         color: #fff;
     }
 
-    // Outline
+    // type
     &.outline {
         border-width: 1px;
         background: #fff;
     }
+    &.radius {
+        border-radius: 2rem;
+    }
+
 
     & + .button {
         margin-left: 1rem;
