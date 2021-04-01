@@ -6,10 +6,6 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Button name="test" lnk="http://naver.com" stl="primary size1" />
-				<Button name="test" lnk="http://naver.com" stl="primary size2 radius" />
-				<Button name="test" lnk="http://naver.com" stl="primary size3" />
-				<Button name="test" lnk="http://naver.com" stl="outline size2" />
 				<Header />
 				<Footer />
 			</div>

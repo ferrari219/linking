@@ -1,10 +1,15 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ leftMnu, logo, cotent, rightMnu }) => {
 	return (
 		<header>
 			<div className="leftMnu">
-				<button type="button">버튼</button>
+				<button type="button">
+					<FontAwesomeIcon icon={faCoffee} />
+					<span className="sr-only">메뉴</span>
+				</button>
 			</div>
 			<div className="content">
 				<h1>
