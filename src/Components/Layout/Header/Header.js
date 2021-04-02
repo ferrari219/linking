@@ -1,24 +1,34 @@
 import React from 'react';
+import style from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ leftMnu, logo, cotent, rightMnu }) => {
 	return (
-		<header>
-			<div className="leftMnu">
-				<button type="button">
-					<FontAwesomeIcon icon={faCoffee} />
+		<header className={style.header}>
+			<div className={style.leftMnu}>
+				<button type="button" className="icon-btn">
+					<FontAwesomeIcon icon={faBars} />
 					<span className="sr-only">메뉴</span>
 				</button>
 			</div>
-			<div className="content">
+			<div className={style.content}>
 				<h1>
-					<a href="#">로고</a>
+					<a href="#">
+						<img src="https://static.hyundailivart.co.kr/assets/images/common/new_logo.png" alt="로고" />
+					</a>
 				</h1>
-				<h2>어디어디</h2>
+				{/* <h2>어디어디</h2> */}
 			</div>
-			<div className="rightMnu">
-				<button type="button">버튼</button>
+			<div className={style.rightMnu}>
+				<button type="button" className="icon-btn">
+					<FontAwesomeIcon icon={faSearch} />
+					<span className="sr-only">검색</span>
+				</button>
+				<button type="button" className="icon-btn">
+					<FontAwesomeIcon icon={faUser} />
+					<span className="sr-only">로그인</span>
+				</button>
 			</div>
 		</header>
 	);
