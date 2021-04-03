@@ -1,0 +1,18 @@
+.topMenu {
+	white-space: nowrap;
+	ul {
+		display: flex;
+		flex-direction: row;
+		overflow-x: auto;
+		list-style: none;
+		height: 2rem;
+		white-space: nowrap;
+		li {
+			float: left;
+			padding: 0 1rem;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}

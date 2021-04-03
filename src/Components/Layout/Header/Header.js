@@ -15,7 +15,7 @@ const Header = ({ leftMnu, logo, cotent, rightMnu }) => {
 			<div className={style.content}>
 				<h1>
 					<a href="#">
-						<img src="https://static.hyundailivart.co.kr/assets/images/common/new_logo.png" alt="로고" />
+						<img src={logo} alt="로고" />
 					</a>
 				</h1>
 				{/* <h2>어디어디</h2> */}
