@@ -1,16 +1,20 @@
+@import 'scss/color';
+
 .topMenu {
 	white-space: nowrap;
 	ul {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		overflow-x: auto;
 		list-style: none;
-		height: 2rem;
+		height: 3rem;
 		white-space: nowrap;
 		li {
 			float: left;
 			padding: 0 1rem;
 			a {
+				color: $gc2;
 				text-decoration: none;
 			}
 		}

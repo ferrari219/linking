@@ -17,21 +17,6 @@ const Menu = () => {
 				<li>
 					<a href="#">이벤트</a>
 				</li>
-				<li>
-					<a href="#">이벤트</a>
-				</li>
-				<li>
-					<a href="#">이벤트</a>
-				</li>
-				<li>
-					<a href="#">이벤트</a>
-				</li>
-				<li>
-					<a href="#">이벤트</a>
-				</li>
-				<li>
-					<a href="#">이벤트</a>
-				</li>
 			</ul>
 		</nav>
 	);
