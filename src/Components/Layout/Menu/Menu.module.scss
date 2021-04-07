@@ -8,12 +8,12 @@
 		align-items: center;
 		overflow-x: auto;
 		list-style: none;
-		height: 3rem;
+		// height: 4rem;
 		white-space: nowrap;
 		li {
-			float: left;
-			padding: 0 1rem;
 			a {
+				display: block;
+				padding: 1.2rem 1rem;
 				color: $gc2;
 				text-decoration: none;
 			}
