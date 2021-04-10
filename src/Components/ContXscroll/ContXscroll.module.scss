@@ -1,9 +1,16 @@
 .ContXscroll {
-	// ul {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// }
-	// a {
-	// 	text-decoration: none;
-	// }
+	h2 {
+		padding-bottom: 1rem;
+	}
+	.item {
+		padding: 0 1rem;
+	}
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 100%;
+		}
+	}
 }

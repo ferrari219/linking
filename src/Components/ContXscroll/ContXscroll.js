@@ -13,7 +13,7 @@ class ContXscroll extends Component {
 			speed: 500,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			// centerMode: true,
+			centerMode: true,
 			lazyLoad: true,
 			// autoplay: true,
 		};
@@ -21,17 +21,17 @@ class ContXscroll extends Component {
 			<section className={style.ContXscroll}>
 				<h2>플리마켓 일정</h2>
 				<Slider {...settings}>
-					<div>
+					<div className={style.item}>
 						<a href="#">
 							<img src={banner} alt="" />
 						</a>
 					</div>
-					<div>
+					<div className={style.item}>
 						<a href="#">
 							<img src={banner} alt="" />
 						</a>
 					</div>
-					<div>
+					<div className={style.item}>
 						<a href="#">
 							<img src={banner} alt="" />
 						</a>

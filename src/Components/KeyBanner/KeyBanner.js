@@ -17,6 +17,8 @@ class KeyBanner extends Component {
 			slidesToScroll: 1,
 			// centerMode: true,
 			lazyLoad: true,
+			pauseOnDotsHover: true,
+			pauseOnFocus: true,
 			// autoplay: true,
 		};
 		return (
