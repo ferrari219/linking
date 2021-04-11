@@ -4,11 +4,14 @@ import './index.scss';
 import 'scss/index'; // Global SCSS
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
+	<BrowserRouter>
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	</BrowserRouter>,
 	document.getElementById('root')
 );
 
