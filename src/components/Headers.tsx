@@ -7,7 +7,7 @@ const Header = styled.header`
 	height: 5rem;
 `;
 const Left = styled.div`
-	flex: 0 0 3rem;
+	flex: 0 0 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +21,7 @@ const Mid = styled.div`
 	background: yellow;
 `;
 const Right = styled.div`
-	flex: 0 0 3rem;
+	flex: 0 0 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,17 +29,17 @@ const Right = styled.div`
 `;
 
 interface IheadersProps {
-	left: string;
+	left?: string;
 	mid: string;
-	right: string;
+	right?: string;
 }
 
 const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
 	return (
 		<Header>
-			<Left>{left}</Left>
+			{left && <Left>{left}</Left>}
 			<Mid>{mid}</Mid>
-			<Right>{right}</Right>
+			{right && <Right>{right}</Right>}
 		</Header>
 	);
 };
