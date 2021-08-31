@@ -4,7 +4,8 @@ import Headers from 'components/Headers';
 const HomePresenter = () => {
 	return (
 		<div>
-			<Headers left="left" mid="mid" right="right" />
+			<Headers mid="test" />
+			Home
 		</div>
 	);
 };

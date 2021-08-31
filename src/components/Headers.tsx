@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Header = styled.header`
 	display: flex;
-	flex-direction: row;
+	flex-flow: row;
+	align-items: center;
 	height: 5rem;
 `;
 const Left = styled.div`
@@ -11,21 +12,34 @@ const Left = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: red;
+	height: 100%;
+	button {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		border: none;
+	}
 `;
 const Mid = styled.div`
 	flex: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: yellow;
 `;
 const Right = styled.div`
 	flex: 0 0 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: red;
+	height: 100%;
+	button {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		border: none;
+	}
 `;
 
 interface IheadersProps {
@@ -34,12 +48,16 @@ interface IheadersProps {
 	right?: string;
 }
 
-const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
+const Headers: React.FC<IheadersProps> = ({ mid }) => {
 	return (
 		<Header>
-			{left && <Left>{left}</Left>}
-			<Mid>{mid}</Mid>
-			{right && <Right>{right}</Right>}
+			<Left>
+				<button>left</button>
+			</Left>
+			<Mid>mid</Mid>
+			<Right>
+				<button>right</button>
+			</Right>
 		</Header>
 	);
 };
