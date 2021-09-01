@@ -8,17 +8,27 @@ const Header = styled.header`
 	height: 5rem;
 `;
 const Left = styled.div`
-	flex: 0 0 5rem;
+	flex: 0 0 7rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
 	button {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		height: 100%;
-		background-color: red;
+		/* background-color: red; */
 		border: none;
+		svg {
+			flex: 0 0 2rem;
+			width: 100%;
+			height: 100%;
+			& + svg {
+				margin-left: 1rem;
+			}
+		}
 	}
 `;
 const Mid = styled.div`
@@ -26,37 +36,47 @@ const Mid = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	img {
+		height: 6vw;
+	}
 `;
 const Right = styled.div`
-	flex: 0 0 5rem;
+	flex: 0 0 7rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
 	button {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		height: 100%;
-		background-color: red;
+		/* background-color: red; */
 		border: none;
+		svg {
+			flex: 0 0 2rem;
+			width: 100%;
+			height: 100%;
+		}
 	}
 `;
 
 interface IheadersProps {
-	left?: string;
-	mid: string;
-	right?: string;
+	left?: string | React.ReactNode;
+	mid: string | React.ReactNode;
+	right?: string | React.ReactNode;
 }
 
-const Headers: React.FC<IheadersProps> = ({ mid }) => {
+const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
 	return (
 		<Header>
 			<Left>
-				<button>left</button>
+				<button>{left}</button>
 			</Left>
-			<Mid>mid</Mid>
+			<Mid>{mid}</Mid>
 			<Right>
-				<button>right</button>
+				<button>{right}</button>
 			</Right>
 		</Header>
 	);
