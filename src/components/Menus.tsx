@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import { Link } from 'react-router-dom';
 
 const data = [
 	{
@@ -47,7 +48,11 @@ const Menus = () => {
 	return (
 		<Ul>
 			{data.map((item) => (
-				<li>{item.name}</li>
+				<li key={item.id}>
+					{/* <Link to={item.lnk}> */}
+					{item.name}
+					{/* </Link> */}
+				</li>
 			))}
 		</Ul>
 	);

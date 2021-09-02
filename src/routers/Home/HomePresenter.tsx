@@ -5,7 +5,9 @@ import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
 import { ReactComponent as IcoMenu } from 'assets/svg/menu.svg';
 import { ReactComponent as IcoUser } from 'assets/svg/user.svg';
 import Menus from 'components/Menus';
-import Carousels from 'components/Carousels';
+import CarouselsFull from 'components/CarouselsFull';
+import MiniCalendar from 'components/MiniCalendar';
+import CarouselsScrX from 'components/CarouselsScrX';
 
 const HomePresenter = () => {
 	return (
@@ -29,7 +31,9 @@ const HomePresenter = () => {
 				}
 			/>
 			<Menus />
-			<Carousels />
+			<CarouselsFull />
+			<MiniCalendar />
+			<CarouselsScrX />
 		</div>
 	);
 };
