@@ -11,7 +11,9 @@ const H2 = styled.h2`
 	font-weight: 600;
 	color: #444;
 `;
-const SliderWrapDiv = styled.div``;
+const SliderWrapDiv = styled.div`
+	overflow: hidden;
+`;
 const ItemDiv = styled.div`
 	padding: 1rem 0 1rem 1rem;
 	img {

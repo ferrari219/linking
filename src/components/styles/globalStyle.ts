@@ -5,6 +5,7 @@ const global = createGlobalStyle`
     ${reset};
 	html {
         overflow-x: hidden;
+        overflow-y: auto;
         display:block;
         width: 100%;
         height: 100%;

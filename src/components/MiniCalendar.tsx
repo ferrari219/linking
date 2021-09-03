@@ -6,6 +6,7 @@ let data = Array.from({ length: 30 }, (v, i) => i + 1);
 // console.log(data);
 
 const Section = styled.section`
+	overflow: hidden;
 	padding: 1rem 2rem;
 	a {
 		display: flex;
@@ -23,9 +24,8 @@ const CalendarDiv = styled.div`
 	/* padding: 0.5rem; */
 	ul {
 		display: flex;
-		flex-flow: nowrap;
-		overflow: auto;
-		/* white-space: nowrap; */
+		white-space: nowrap;
+		overflow-x: auto;
 		li {
 			display: flex;
 			justify-content: center;

@@ -9,6 +9,9 @@ import { SrOnly } from 'components/styles/globalStyle';
 const H2 = styled.h2`
 	${SrOnly}
 `;
+const SliderWrapDiv = styled.div`
+	overflow: hidden;
+`;
 const ItemDiv = styled.div`
 	img {
 		width: 100%;
@@ -24,31 +27,33 @@ const CarouselsFull = () => {
 		slidesToScroll: 1,
 	};
 	return (
-		<div>
+		<section>
 			<H2>메인배너</H2>
-			<Slider {...settings}>
-				<ItemDiv>
-					{/* <a> */}
-					<img src={ImgSample} alt="" />
-					{/* </a> */}
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-			</Slider>
-		</div>
+			<SliderWrapDiv>
+				<Slider {...settings}>
+					<ItemDiv>
+						{/* <a> */}
+						<img src={ImgSample} alt="" />
+						{/* </a> */}
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+				</Slider>
+			</SliderWrapDiv>
+		</section>
 	);
 };
 

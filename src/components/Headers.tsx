@@ -5,6 +5,7 @@ const Header = styled.header`
 	display: flex;
 	flex-flow: row;
 	align-items: center;
+	padding: 0 1rem;
 	height: 5rem;
 `;
 const Left = styled.div`
@@ -19,7 +20,7 @@ const Left = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		/* background-color: red; */
+		background-color: #fff;
 		border: none;
 		/* & + button {
 			margin-left: 1rem;
@@ -52,7 +53,7 @@ const Right = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		/* background-color: red; */
+		background-color: #fff;
 		border: none;
 		svg {
 			flex: 0 0 2rem;

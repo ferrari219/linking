@@ -7,7 +7,7 @@ const Section = styled.section`
 	width: 100%;
 	max-width: 89rem;
 	margin: 0 auto;
-	background-color: #f2f2f2;
+	/* background-color: #f2f2f2; */
 `;
 
 const App = () => {
