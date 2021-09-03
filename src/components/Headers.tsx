@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ReactComponent as IcoMenu } from 'assets/svg/menu.svg';
+import Menus from './Menus';
 
 const Header = styled.header`
 	display: flex;
@@ -29,6 +31,17 @@ const Left = styled.div`
 			flex: 0 0 2rem;
 			width: 100%;
 			height: 100%;
+		}
+	}
+	nav {
+		position: absolute;
+		left: -100%;
+		top: 0;
+		width: 100vw;
+		z-index: 2;
+		transition: left 0.2s;
+		&.is-active {
+			left: 0;
 		}
 	}
 `;
@@ -63,6 +76,13 @@ const Right = styled.div`
 	}
 `;
 
+const handleMenuButton = (e: React.SyntheticEvent<EventTarget>) => {
+	e.preventDefault();
+	// console.log('Menu');
+	const menus = document.querySelector('nav') as HTMLParagraphElement;
+	menus.classList.add('is-active');
+};
+
 interface IheadersProps {
 	left?: string | React.ReactNode;
 	mid: string | React.ReactNode;
@@ -72,7 +92,15 @@ interface IheadersProps {
 const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
 	return (
 		<Header>
-			<Left>{left}</Left>
+			<Left>
+				{left}
+				<button onClick={handleMenuButton}>
+					<IcoMenu />
+				</button>
+				<nav>
+					<Menus />
+				</nav>
+			</Left>
 			<Mid>{mid}</Mid>
 			<Right>{right}</Right>
 		</Header>
