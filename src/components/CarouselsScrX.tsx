@@ -4,49 +4,61 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ImgSample from 'assets/img/banner.jpg';
 import styled from 'styled-components';
-import { SrOnly } from 'components/styles/globalStyle';
 
-const H2 = styled.h2``;
+const H2 = styled.h2`
+	padding: 2rem 2rem 0rem 2rem;
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #444;
+`;
+const SliderWrapDiv = styled.div``;
 const ItemDiv = styled.div`
+	padding: 1rem 0 1rem 1rem;
 	img {
 		width: 100%;
 	}
 `;
 
-const CarouselsScrX = () => {
+interface IcarouselscrxProps {
+	title: string;
+}
+// 플리마켓 일정
+const CarouselsScrX: React.FC<IcarouselscrxProps> = ({ title }) => {
 	const settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 1,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 	};
 	return (
-		<div>
-			<H2>플리마켓 일정</H2>
-			<Slider {...settings}>
-				<ItemDiv>
-					{/* <a> */}
-					<img src={ImgSample} alt="" />
-					{/* </a> */}
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-				<ItemDiv>
-					<img src={ImgSample} alt="" />
-				</ItemDiv>
-			</Slider>
-		</div>
+		<section>
+			<H2>{title}</H2>
+			<SliderWrapDiv>
+				<Slider {...settings}>
+					<ItemDiv>
+						{/* <a> */}
+						<img src={ImgSample} alt="" />
+						{/* </a> */}
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+					<ItemDiv>
+						<img src={ImgSample} alt="" />
+					</ItemDiv>
+				</Slider>
+			</SliderWrapDiv>
+		</section>
 	);
 };
 

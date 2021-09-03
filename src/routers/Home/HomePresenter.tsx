@@ -33,7 +33,8 @@ const HomePresenter = () => {
 			<Menus />
 			<CarouselsFull />
 			<MiniCalendar />
-			<CarouselsScrX />
+			<CarouselsScrX title="플리마켓 일정" />
+			<CarouselsScrX title="베스트 클래스" />
 		</div>
 	);
 };
