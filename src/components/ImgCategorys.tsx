@@ -1,18 +1,42 @@
 import React from 'react';
-import { ReactComponent as User } from 'assets/svg/user.svg';
+import styled from 'styled-components';
+import ImgCategory from './ImgCategory';
 
-const ImgCategorys = () => {
+const WrapDiv = styled.div`
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 2rem;
+	}
+`;
+
+interface IimgcategorysProps {
+	title: string;
+}
+
+const ImgCategorys: React.FunctionComponent<IimgcategorysProps> = ({
+	title,
+}) => {
 	return (
-		<div>
-			<h2>원데이 클래스</h2>
+		<WrapDiv>
+			<h2>{title}</h2>
 			<div>
 				<ul>
-					<li>
-						<User />
-					</li>
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
+					<ImgCategory />
 				</ul>
 			</div>
-		</div>
+		</WrapDiv>
 	);
 };
 
