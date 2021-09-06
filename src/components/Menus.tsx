@@ -12,17 +12,18 @@ const Section = styled.section`
 	height: 100vh;
 `;
 const DimmedDiv = styled.div`
-	display: none;
-	/* position: absolute;
+	/* display: none; */
+	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	background-color: black;
-	opacity: 0.7; */
+	opacity: 0.7;
 `;
 const WrapDiv = styled.div`
 	position: relative;
+	width: 80%;
 	height: inherit;
 	background-color: #fff;
 	z-index: 2;
@@ -30,6 +31,7 @@ const WrapDiv = styled.div`
 		display: flex;
 		flex-flow: row wrap;
 		height: 5rem;
+		padding: 0 2rem;
 	}
 `;
 const LeftDiv = styled.div`
