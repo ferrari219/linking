@@ -5,11 +5,15 @@ import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
 import CarouselsScrX from './CarouselsScrX';
 import ImgCategorys from './ImgCategorys';
 import Searchs from './Searchs';
+import { SrOnly } from 'components/styles/globalStyle';
 
 const Section = styled.section`
 	position: fixed;
 	width: 100%;
 	height: 100vh;
+`;
+const H2 = styled.h2`
+	${SrOnly};
 `;
 const DimmedDiv = styled.div`
 	/* display: none; */
@@ -98,6 +102,7 @@ const handleCloseBtn = (e: React.SyntheticEvent<EventTarget>) => {
 const Menus = () => {
 	return (
 		<Section>
+			<H2>상세페이지</H2>
 			<DimmedDiv />
 			<WrapDiv>
 				<header>
