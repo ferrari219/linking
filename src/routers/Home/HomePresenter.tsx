@@ -2,7 +2,6 @@ import React from 'react';
 import Headers from 'components/Headers';
 import Logo from 'assets/img/logo.png';
 // import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
-import { ReactComponent as IcoUser } from 'assets/svg/user.svg';
 import Navs from 'components/Navs';
 import CarouselsFull from 'components/CarouselsFull';
 import MiniCalendar from 'components/MiniCalendar';
@@ -18,11 +17,6 @@ const HomePresenter = () => {
 				// 	</button>
 				// }
 				mid={<img src={Logo} alt="리바트링킹" />}
-				right={
-					<button>
-						<IcoUser />
-					</button>
-				}
 			/>
 			<Navs />
 			<CarouselsFull />

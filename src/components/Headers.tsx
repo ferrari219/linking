@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as IcoMenu } from 'assets/svg/menu.svg';
+import { ReactComponent as IcoUser } from 'assets/svg/user.svg';
 import Menus from './Menus';
 
 const Header = styled.header`
@@ -102,7 +103,12 @@ const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
 				</nav>
 			</Left>
 			<Mid>{mid}</Mid>
-			<Right>{right}</Right>
+			<Right>
+				{right}
+				<button>
+					<IcoUser />
+				</button>
+			</Right>
 		</Header>
 	);
 };

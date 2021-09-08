@@ -20,7 +20,7 @@ const Li = styled.li`
 const ImgCategory = () => {
 	return (
 		<Li>
-			<a>
+			<a href="http://">
 				<User />
 			</a>
 		</Li>
