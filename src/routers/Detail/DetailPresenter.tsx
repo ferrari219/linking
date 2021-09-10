@@ -32,10 +32,10 @@ const DetailPresenter = () => {
 				<div>
 					<ul>
 						<li>
-							<a href="#">수업소개</a>
+							<a href="https://">수업소개</a>
 						</li>
 						<li>
-							<a href="#">커리큘럼, 일정/장소, 리뷰</a>
+							<a href="https://">커리큘럼, 일정/장소, 리뷰</a>
 						</li>
 					</ul>
 					<div>
