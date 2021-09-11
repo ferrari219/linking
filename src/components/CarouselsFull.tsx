@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ImgSample from 'assets/img/banner.jpg';
+import ImgSample from 'assets/img/banner_sample.jpg';
 import styled from 'styled-components';
 import { SrOnly } from 'components/styles/globalStyle';
 
