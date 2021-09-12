@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Headers from 'components/Headers';
 import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
 import ImgDetail from 'assets/img/detail_sample.jpg';
+import { ReactComponent as IcoLocation } from 'assets/svg/location.svg';
+import { ReactComponent as IcoClock } from 'assets/svg/clock.svg';
 
 const Section = styled.section`
 	width: 100%;
@@ -143,11 +145,22 @@ const DetailPresenter = () => {
 						</li>
 					</TabUl>
 					<div>
-						6/6(토)~7(일) PM 2:00~6:00
-						<br />
-						리바트 스테이 서초점
-						<br />
-						수강 만족도
+						<div>
+							<ul>
+								<li>
+									<IcoClock />
+									6/6(토)~7(일) PM 2:00~6:00
+								</li>
+								<li>
+									<IcoLocation />
+									리바트 스테이 서초점
+								</li>
+								<li>수강 만족도</li>
+							</ul>
+							<br />
+
+							<br />
+						</div>
 					</div>
 				</div>
 				<PitemPriceDiv>
