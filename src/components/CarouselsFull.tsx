@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import ImgSample from 'assets/img/banner_sample.jpg';
 import styled from 'styled-components';
 import { SrOnly } from 'components/styles/globalStyle';
+import { Link } from 'react-router-dom';
 
 const H2 = styled.h2`
 	${SrOnly}
@@ -32,9 +33,9 @@ const CarouselsFull = () => {
 			<SliderWrapDiv>
 				<Slider {...settings}>
 					<ItemDiv>
-						{/* <a> */}
-						<img src={ImgSample} alt="" />
-						{/* </a> */}
+						<Link to="/detail">
+							<img src={ImgSample} alt="" />
+						</Link>
 					</ItemDiv>
 					<ItemDiv>
 						<img src={ImgSample} alt="" />

@@ -45,7 +45,7 @@ const CalendarDiv = styled.div`
 const MiniCalendar = () => {
 	return (
 		<Section>
-			<Link to="#">
+			<Link to="/calendar">
 				<TitleDiv>
 					<h2>6월</h2>
 				</TitleDiv>
