@@ -39,17 +39,6 @@ const Left = styled.div`
 			height: 100%;
 		}
 	}
-	nav {
-		position: absolute;
-		left: -100%;
-		top: 0;
-		width: 100vw;
-		z-index: 2;
-		transition: left 0.2s;
-		&.is-active {
-			left: 0;
-		}
-	}
 `;
 const Mid = styled.div`
 	flex: 1;
@@ -81,6 +70,17 @@ const Right = styled.div`
 		}
 	}
 `;
+const Nav = styled.nav`
+	position: absolute;
+	left: -100%;
+	top: 0;
+	width: 100vw;
+	z-index: 2;
+	transition: left 0.2s;
+	&.is-active {
+		left: 0;
+	}
+`;
 
 const handleMenuButton = (e: React.SyntheticEvent<EventTarget>) => {
 	e.preventDefault();
@@ -98,24 +98,26 @@ interface IheadersProps {
 
 const Headers: React.FC<IheadersProps> = ({ left, mid, right, dark }) => {
 	return (
-		<Header dark={dark}>
-			<Left>
-				{left}
-				<button onClick={handleMenuButton}>
-					<IcoMenu />
-				</button>
-				<nav>
-					<Menus />
-				</nav>
-			</Left>
-			<Mid>{mid}</Mid>
-			<Right>
-				{right}
-				<button>
-					<IcoUser />
-				</button>
-			</Right>
-		</Header>
+		<>
+			<Header dark={dark}>
+				<Left>
+					{left}
+					<button onClick={handleMenuButton}>
+						<IcoMenu />
+					</button>
+				</Left>
+				<Mid>{mid}</Mid>
+				<Right>
+					{right}
+					<button>
+						<IcoUser />
+					</button>
+				</Right>
+			</Header>
+			<Nav>
+				<Menus />
+			</Nav>
+		</>
 	);
 };
 
