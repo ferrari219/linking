@@ -4,12 +4,17 @@ import { ReactComponent as IcoMenu } from 'assets/svg/menu.svg';
 import { ReactComponent as IcoUser } from 'assets/svg/user.svg';
 import Menus from './Menus';
 
-const Header = styled.header`
+const Header = styled.header<{ dark: boolean }>`
 	display: flex;
 	flex-flow: row;
 	align-items: center;
 	padding: 0 1rem;
 	height: 5rem;
+	background-color: ${(props) => (props.dark ? '#333' : '#fff')};
+	color: ${(props) => (props.dark ? '#fff' : '#333')};
+	svg {
+		fill: ${(props) => (props.dark ? '#fff' : '#333')};
+	}
 `;
 const Left = styled.div`
 	flex: 0 0 8rem;
@@ -23,7 +28,7 @@ const Left = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		background-color: #fff;
+		background-color: transparent;
 		border: none;
 		/* & + button {
 			margin-left: 1rem;
@@ -67,7 +72,7 @@ const Right = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		background-color: #fff;
+		background-color: transparent;
 		border: none;
 		svg {
 			flex: 0 0 2rem;
@@ -88,11 +93,12 @@ interface IheadersProps {
 	left?: string | React.ReactNode;
 	mid: string | React.ReactNode;
 	right?: string | React.ReactNode;
+	dark?: boolean;
 }
 
 const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
 	return (
-		<Header>
+		<Header dark={true}>
 			<Left>
 				{left}
 				<button onClick={handleMenuButton}>
