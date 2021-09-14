@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as IcoClose } from 'assets/svg/close.svg';
-import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
+// import { ReactComponent as IcoBack } from 'assets/svg/back.svg';
 import CarouselsScrX from './CarouselsScrX';
 import ImgCategorys from './ImgCategorys';
 import Searchs from './Searchs';
@@ -29,14 +29,18 @@ const WrapDiv = styled.div`
 	position: relative;
 	width: 80%;
 	height: inherit;
-	background-color: #fff;
+	background-color: #f5f5f5;
+	color: #333;
 	z-index: 2;
-	header {
-		display: flex;
-		flex-flow: row wrap;
-		height: 5rem;
-		padding: 0 2rem;
+	svg {
+		fill: #333;
 	}
+`;
+const Div = styled.div`
+	display: flex;
+	flex-flow: row wrap;
+	height: 5rem;
+	padding: 0 2rem;
 `;
 const LeftDiv = styled.div`
 	flex: 0 0 8rem;
@@ -50,7 +54,7 @@ const LeftDiv = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		background-color: #fff;
+		background-color: transparent;
 		border: none;
 		svg {
 			flex: 0 0 2rem;
@@ -77,21 +81,17 @@ const RightDiv = styled.div`
 		align-items: center;
 		width: 3rem;
 		height: 100%;
-		background-color: #fff;
+		background-color: transparent;
 		border: none;
 		svg {
 			flex: 0 0 2rem;
 			width: 100%;
 			height: 100%;
+			fill: #333;
 		}
 	}
 `;
 
-const handleBackBtn = (e: React.SyntheticEvent<EventTarget>) => {
-	e.preventDefault();
-	const menus = document.querySelector('nav') as HTMLParagraphElement;
-	menus.classList.remove('is-active');
-};
 const handleCloseBtn = (e: React.SyntheticEvent<EventTarget>) => {
 	e.preventDefault();
 	console.log('close');
@@ -105,12 +105,8 @@ const Menus = () => {
 			<H2>상세페이지</H2>
 			<DimmedDiv />
 			<WrapDiv>
-				<header>
-					<LeftDiv>
-						<button onClick={handleBackBtn}>
-							<IcoBack />
-						</button>
-					</LeftDiv>
+				<Div>
+					<LeftDiv />
 					<MidDiv>
 						<h2>Menus</h2>
 					</MidDiv>
@@ -119,7 +115,7 @@ const Menus = () => {
 							<IcoClose />
 						</button>
 					</RightDiv>
-				</header>
+				</Div>
 				<Searchs />
 				<CarouselsScrX title="플리마켓 리스트" />
 				<ImgCategorys title="원데이 클래스" />

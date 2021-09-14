@@ -4,7 +4,7 @@ import { ReactComponent as IcoMenu } from 'assets/svg/menu.svg';
 import { ReactComponent as IcoUser } from 'assets/svg/user.svg';
 import Menus from './Menus';
 
-const Header = styled.header<{ dark: boolean }>`
+const Header = styled.header<{ dark?: boolean }>`
 	display: flex;
 	flex-flow: row;
 	align-items: center;
@@ -96,9 +96,9 @@ interface IheadersProps {
 	dark?: boolean;
 }
 
-const Headers: React.FC<IheadersProps> = ({ left, mid, right }) => {
+const Headers: React.FC<IheadersProps> = ({ left, mid, right, dark }) => {
 	return (
-		<Header dark={true}>
+		<Header dark={dark}>
 			<Left>
 				{left}
 				<button onClick={handleMenuButton}>
