@@ -47,6 +47,7 @@ const Mid = styled.div`
 	align-items: center;
 	img {
 		height: 6vw;
+		max-height: 5rem;
 	}
 `;
 const Right = styled.div`

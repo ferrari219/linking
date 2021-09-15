@@ -27,7 +27,7 @@ const DimmedDiv = styled.div`
 `;
 const WrapDiv = styled.div`
 	position: relative;
-	width: 80%;
+	width: 30rem;
 	height: inherit;
 	background-color: #f5f5f5;
 	color: #333;
