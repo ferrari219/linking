@@ -3,10 +3,16 @@ import styled from 'styled-components';
 import ImgCategory from './ImgCategory';
 
 const WrapDiv = styled.div`
+	h2 {
+		padding: 2rem 2rem 0rem 2rem;
+		font-size: 2.4rem;
+		font-weight: 600;
+		color: #444;
+	}
 	ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		padding: 2rem;
+		padding: 1rem 2rem 2rem 2rem;
 	}
 `;
 
