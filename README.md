@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Livart Linking
 
-## Getting Started
+'리바트 링킹' 이란?
 
-First, run the development server:
+리바트 매장 내 잔여 공간, 시간을 활용해 원데이 클래스&플리마켓 운영 신규사업제안.
+사내 공모전 최우수상 수상
 
-```bash
-npm run dev
-# or
-yarn dev
+### 미리보기
+
+[구축 보기](https://ferrari219.github.io/linking)
+
+[프로토타입 보기](https://xd.adobe.com/view/396a5d24-354e-468e-45e6-cb3d07819689-4f5b/screen/6d629aa4-a2c2-4650-868a-3c91d0f62c51)
+
+![2021-03-17 12 03 03](https://user-images.githubusercontent.com/16126002/111408552-cb9d9880-8718-11eb-90b1-2c70d7958b8b.png)
+
+디자인 업그레이드 과정
+
+![linking_thumb1](https://user-images.githubusercontent.com/16126002/111254431-6bdfb880-8658-11eb-9de3-f46c5437fa4b.jpg)
+
+### 사용 프로그램
+
+```
+Design: Adobe XD
+FrontEnd: React.js, node-sass, craco
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 개발 이야기
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+지금껏 거론 된적 없는 아이디어 조각들을 모아 하나의 서비스로 만드는 과정을
+직접 경험해보는것도 색다른 경험이었습니다.
+기획부터 디자인, 프론트엔드까지 모두 할수 있었거든요.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+디자인은 다소 급조된 부분이 있어 아쉽게 생각됩니다.
+차후 Figma로 다시 만들어보면서 디자인 다듬어 볼 생각입니다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+프론트엔드는 리액트를 사용했습니다.
+스타일은 SASS를 사용했고, 절대경로 처리를 위해 craco를 썼습니다.
